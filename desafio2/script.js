@@ -16,6 +16,7 @@ let nombreCompra = "";
 let cantidadCompra;
 let precioTotalVenta = 0;
 
+
 alert(
     "Estos son los productos que usted puede comprar: \n" +
         nombreProductoA +
@@ -31,7 +32,7 @@ let cantidadProductosCompra = parseInt(
 
 function encontrarProducto() {
     for (let i = 0; i < cantidadProductosCompra; i++) {
-        nombreCompra = prompt("que producto desea comprar");
+        nombreCompra = prompt("que producto desea comprar?");
 
         if (
             nombreCompra == nombreProductoA ||
@@ -46,7 +47,7 @@ function encontrarProducto() {
         ) {
             compra(stockProductoC, precioProductoC, nombreProductoC);
         } else {
-            alert("no contamos con ese producto");
+            alert("No contamos con ese producto");
         }
     }
 }
